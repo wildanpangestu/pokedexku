@@ -1,20 +1,20 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { Link } from "react-router-dom"
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-import { FaEye } from "react-icons/fa"
-import pokeTypes from "../../assets/mocks/pokeTypes"
+import { FaEye } from "react-icons/fa";
+import pokeTypes from "../../assets/mocks/pokeTypes";
 
 const Pokemon = (props) => {
-  const { id } = props
-  const { type } = props
-  const { name } = props
-  const { number } = props
-  const { img } = props
+  const { id } = props;
+  const { type } = props;
+  const { name } = props;
+  // const { number } = props
+  const { img } = props;
 
   const cardColor = pokeTypes[`${type.toLowerCase()}`]
     ? pokeTypes[`${type.toLowerCase()}`]
-    : "#003a70"
+    : "#003a70";
 
   return (
     <div className="poke-list__item" style={{ borderColor: `${cardColor}` }}>
@@ -30,17 +30,15 @@ const Pokemon = (props) => {
           className="poke-list__item__button__info"
           style={{ backgroundColor: `${cardColor}` }}
         >
-          <p className="poke-list__item__button__info__name">
-            {name}
-          </p>
+          <p className="poke-list__item__button__info__name">{name}</p>
           <div>
             <FaEye />
           </div>
         </div>
       </Link>
     </div>
-  )
-}
+  );
+};
 
 Pokemon.defaultProps = {
   id: "/",
@@ -48,7 +46,7 @@ Pokemon.defaultProps = {
   name: "",
   number: "",
   img: "",
-}
+};
 
 Pokemon.propTypes = {
   id: PropTypes.node,
@@ -56,6 +54,6 @@ Pokemon.propTypes = {
   name: PropTypes.node,
   number: PropTypes.node,
   img: PropTypes.node,
-}
+};
 
-export default Pokemon
+export default Pokemon;
