@@ -29,12 +29,12 @@ const Pokemon = () => {
     : null;
 
   const handlerBackHome = () => {
-    history.push("/");
+    history.push("/pokedexku");
   };
 
-  const handlerCatch = () => {
-    history.push(`/form/${id}`);
-  };
+  // const handlerCatch = () => {
+  //   history.push(`/form/${id}`);
+  // };
 
   useEffect(() => {
     setCardColor(pokeTypes[`${type}`] ? pokeTypes[`${type}`] : "#003a70");

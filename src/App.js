@@ -12,7 +12,7 @@ function App() {
       <>
         <Body>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/pokedexku" component={Home} />
             <Route exact path="/:id" component={Pokemon} />
             {/* <Route exact path="/form/:id" component={Form} /> */}
             <Route exact path="*" component={Page404} />

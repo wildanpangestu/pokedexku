@@ -12,7 +12,7 @@ const Error = (props) => {
   const history = useHistory();
 
   const handlerBackHome = () => {
-    history.push("/");
+    history.push("/pokedexku");
   };
 
   return (

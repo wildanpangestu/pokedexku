@@ -1,9 +1,8 @@
 {
   "homepage": "http://wildanpangestu.github.io/pokedexku",
-  "name": "client",
+  "name": "pokedexku",
   "version": "1.0.0",
   "private": true,
-  "proxy": "http://localhost:5000/",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "@testing-library/jest-dom": "^5.11.2",
