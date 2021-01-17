@@ -1,8 +1,9 @@
 {
+  "homepage": "http://wildanpangestu.github.io/pokedexku",
   "name": "client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "proxy": "http://localhost:3000/",
+  "proxy": "http://localhost:5000/",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "@testing-library/jest-dom": "^5.11.2",
@@ -27,7 +28,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,6 +52,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.0.5"
   }
 }
