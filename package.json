@@ -1,6 +1,6 @@
 {
   "name": "pokedexku",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "main": "server.js",
   "dependencies": {
@@ -20,9 +20,9 @@
     "nodemon": "^2.0.4"
   },
   "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "client": "cd client && npm start",
     "start": "node server.js",
-    "dev": "concurrently --kill-others-on-fail \"nodemon server.js\" \"npm run client\"",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "concurrently --kill-others-on-fail \"nodemon server.js\" \"npm run client\""
   }
 }
